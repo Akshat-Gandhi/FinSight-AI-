@@ -1,0 +1,20 @@
+{
+    "mcpServers": {
+      "FundamentalsServer": {
+        "command": "uv",
+        "args": [
+          "run",
+          "--with",
+          "fastapi",
+          "--with",
+          "mcp[cli]",
+          "--with",
+          "yfinance",
+          "mcp",
+          "run",
+          "D:\\MCP_protocol\\server\\serverdata.py"
+        ]
+      }
+
+    }
+  }
