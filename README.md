@@ -3,7 +3,7 @@ A sophisticated Python-based trading and market analysis platform powered by AI.
 
 ## 📋 Overview
 
-mcp-trading-ai is a modern Python application that combines FastAPI, LangChain, OpenAI, and yfinance to create a powerful platform for financial market analysis and trading. The system features a robust client-server architecture with advanced AI capabilities, designed to process complex financial data and generate intelligent trading insights.
+mcp-trading-ai is a modern Python application that combines  LangChain, OpenAI, and yfinance to create a powerful platform for financial market analysis and trading. The system features a robust client-server architecture with advanced AI capabilities, designed to process complex financial data and generate intelligent trading insights.
 
 Key capabilities include:
 - Real-time market data processing and analysis
