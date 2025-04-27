@@ -1,10 +1,17 @@
 import os
 from fastapi import  HTTPException
+from pydantic import BaseModel
 from mcp.server.fastmcp import FastMCP
 import yfinance as yf
 from openai import OpenAI
 from dotenv import load_dotenv
-from core_classes import TradeInput
+
+from pydantic import BaseModel
+
+class TradeInput(BaseModel):
+    symbol: str        # e.g., "AAPL.NS" or "RELIANCE.NS"
+    average_price: float
+    quantity: int 
 
 load_dotenv()
 
@@ -12,7 +19,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 MODEL_NAME = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
 # Initialize FastMCP server instance
-mcp = FastMCP("FundamentalsServer", dependencies=["fastapi", "yfinance"])
+mcp = FastMCP("Server", dependencies=["fastapi", "yfinance","mcp[cli]","mcp","openai"])
 
 # Shared schema for input
 
