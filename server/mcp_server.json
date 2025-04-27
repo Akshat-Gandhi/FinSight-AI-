@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "Server": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "fastapi",
+        "--with",
+        "mcp",
+        "--with",
+        "mcp[cli]",
+        "--with",
+        "openai",
+        "--with",
+        "yfinance",
+        "mcp",
+        "run",
+        "D:\\MCP_protocol\\server\\serverdata.py"
+      ]
+    }
+  }
+}
