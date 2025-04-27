@@ -1,4 +1,4 @@
-# mcp-trading-ai
+
 A sophisticated Python-based trading and market analysis platform powered by AI.
 
 ## 📋 Overview
